@@ -10,11 +10,16 @@ class MainController extends Controller
     public function homepage()
     {
                 include '../public/assets/views/main/homepage.php';
-//        $this->view('../public/assets/views/main/example-homepage.php', true);
+    }
+
+    public function login()
+    {
+        include '../public/assets/views/main/login.php';
     }
 
     public function notFound()
     {
+        echo "not Found";
     }
 
 }
