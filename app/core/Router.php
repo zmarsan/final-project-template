@@ -16,6 +16,14 @@ class Router
         $uriParse = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
         $method =  $_SERVER['REQUEST_METHOD'];
 
+        if ($uriParse === '/users' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            $userController = new UserController();
+            $userController->saveUser();
+
+    
+        }
+
+    
         if ($uriParse[0]) {
             $route = $this->routeList[$uriParse[0]];
             if ($route) {
@@ -33,3 +41,6 @@ class Router
         }
     }
 }
+
+
+?>
