@@ -280,7 +280,7 @@ section{
 
                    
     
-                    <p> If you are interested in taking muisc lessons with me please provide your first and last name, including your email address in the form below. <p>
+                    <p> If you are interested in taking music lessons with me please provide your first and last name, including your email address, phone number, and age in the form below. <p>
                     <p> Alternative ways to contact me are: </p>
                     <ul>
                         <li> gmail: zmarsan@fordham.edu </li>
@@ -409,4 +409,5 @@ mysqli_query($conn, $query);
 
 
 ?>
+
 
