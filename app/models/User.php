@@ -13,4 +13,9 @@ class User
     public function getAllUsers() {
         return $this->findAll();
     }
+
+    public function updateUser($inputData){
+        $query = "update users set fname = :fname, lname = :lname";
+        return $this->queryWithParams($query, $inputData);
+    }
 }
